@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'LoginPage.dart';
+import 'package:lezaczek/incoming_events.dart';
+import 'event_page1.dart';
+import 'event_page2.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget{
-    @override
-  Widget build(BuildContext context) {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-      return new MaterialApp(
-          debugShowCheckedModeBanner: false,
-          home: LoginPage(),
-      );
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: IncomingEvents(),
+    );
   }
 }
